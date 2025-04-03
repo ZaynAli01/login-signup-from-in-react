@@ -59,7 +59,7 @@ export default function LoginSingUpForm() {
 
 
       <div className="login-form">
-        <div className="login-content">
+        <div className="login-content ">
           <h1 className='mb-5 display-3 fw-bold'>Login</h1>
           <form onSubmit={createUser}>
             <div className="inputs mb-4">
@@ -70,9 +70,9 @@ export default function LoginSingUpForm() {
               <input type="Password" name="password" id="" onChange={handleOnChange} value={userDetail.password} placeholder='Enter Password' />
               <i className="fa-solid fa-lock"></i>
             </div>
-            <a href="" className='text-decoration-none m-3 text-dark'>Forget Password?</a>
-            <button onClick={loginUser} >Login</button>
           </form>
+          <a href="" className='text-decoration-none m-3 text-dark'>Forget Password?</a>
+          <button onClick={loginUser} >Login</button>
           <p className='mt-3 mb-2'>Login with socail media platforms</p>
           <Icons />
         </div>
